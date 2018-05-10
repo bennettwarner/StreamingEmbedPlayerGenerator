@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Test Player Generator</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row">
+                <div class="col-md-2">
+</div>
+                <div class="col-md-8">
+                    <center>
+                        <h1>Test Player &amp; Embed Generator</h1>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+</div>
+                <div class="col-md-6">
+                    <form role="form" action="generate.php" method="post">
+                        <div class="form-group">
+                            <label class="control-label" for="formInput42">Stream Server</label>
+                            <input type="text" class="form-control" id="server" name="server" value="live.phxcdn.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputEmail1">Stream Key</label>
+                            <input type="text" class="form-control" id="streamkey" name="streamkey" placeholder="Enter stream key" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputEmail1">Placeholder Image</label>
+                            <input type="text" class="form-control" id="image" name="image" placeholder="Web address of image">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputPassword1">Resolution</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3">Width&nbsp</span>
+                                <input type="text" class="form-control" id="width" name="width" aria-describedby="basic-addon3" required value="640">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3">Height</span>
+                                <input type="text" class="form-control" id="height" name="height" aria-describedby="basic-addon3" value="360" required>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label class="control-label">
+                                <input type="checkbox" checked="checked" name="autoplay" value="true">Try to start stream on load &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </label>
+                        </div>
+                        <center>
+                            <button type="submit" class="btn btn-primary">Generate</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
