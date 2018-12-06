@@ -19,7 +19,7 @@ echo "
  <br>
  <h1>PHXCDN Test Player - ".$stream_key."</h1>
  <div id='player'></div>
- <center>
+ </center>
  <script>
    var player = new Clappr.Player({
 source: 'http://".$server."/live/".$stream_key."/index.m3u8',
@@ -39,7 +39,7 @@ echo "
 <script type='text/javascript' src='https://cdn.jsdelivr.net/clappr/latest/clappr.min.js'></script>
  <center>
  <div id='player'></div>
- <center>
+ </center>
  <script>
    var player = new Clappr.Player({
 source: 'http://".$server."/live/".$stream_key."/index.m3u8',
